@@ -1,0 +1,5 @@
+entity/Filme.class
+bean/FilmeBean.class
+bean/FilmeBean$FilmeBeanBuilder.class
+entity/Filme$FilmeBuilder.class
+repository/FilmeRepository.class
