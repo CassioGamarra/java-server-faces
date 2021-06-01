@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name="film")
+@Table(name="filme")
 @Data
 @Builder
 @NoArgsConstructor
@@ -16,34 +16,34 @@ import javax.persistence.*;
 public class Filme {
 
     @Id
-    @Column(name="film_id")
+    @Column(name="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="title", nullable = false)
+    @Column(name="titulo", nullable = false)
     private String titulo;
 
-    @Column(name="description", nullable = false)
+    @Column(name="descricao", nullable = false)
     private String descricao;
 
-    @Column(name="release_year")
+    @Column(name="ano_lancamento")
     private int anoLancamento;
 
-    @Column(name="rental_duration")
+    @Column(name="duracao_aluguel")
     private int duracaoAluguel;
 
-    @Column(name="rental_rate")
+    @Column(name="custo_aluguel")
     private double custoAluguel;
 
-    @Column(name="length")
+    @Column(name="duracao")
     private int duracao;
 
-    @Column(name="replacement_cost")
+    @Column(name="preco_reposicao")
     private double precoReposicao;
 
-    @Column(name="rating")
+    @Column(name="classificacao")
     private String classificacao;
 
-    @Column(name="special_features")
+    @Column(name="conteudo_especial")
     private String conteudoEspecial;
 }

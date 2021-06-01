@@ -53,10 +53,14 @@ public class FilmeBean {
 
     public String precoMedioLocacao() {
         double valorTotalFilmes = 0;
-        for(Filme filme : listaFilmes) {
-            valorTotalFilmes += filme.getCustoAluguel();
+        if(listaFilmes.size() > 0) {
+            for(Filme filme : listaFilmes) {
+                valorTotalFilmes += filme.getCustoAluguel();
+            }
+            return String.format("%.2f", (valorTotalFilmes/totalFilmes));
+        } else {
+            return "0";
         }
-        return String.format("%.2f", (valorTotalFilmes/totalFilmes));
     }
 
     public int totalDeFilmes() {

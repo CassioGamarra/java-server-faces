@@ -19,7 +19,7 @@ public class FilmeRepository {
     public void setup() {
         Configuration config = new Configuration();
         config.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
-        config.setProperty("hibernate.connection.url", "jdbc:mysql://172.17.0.2:3306/sakila");
+        config.setProperty("hibernate.connection.url", "jdbc:mysql://127.0.1.1:3306/locadora");
         config.setProperty("hibernate.connection.username", "root");
         config.setProperty("hibernate.connection.password", "123123");
         config.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
